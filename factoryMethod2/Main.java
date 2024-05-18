@@ -7,5 +7,8 @@ public class Main {
         String result = bruteForceCracker.crack(hashToCrack);
         System.out.println("Brute Force Result: " + result);
 
+        LocalPasswordCracker dictionaryCracker = new DictionnaryLocalPasswordCracker("path/to/dictionary.txt");
+        result = dictionaryCracker.crack(hashToCrack);
+        System.out.println("Dictionary Result: " + result);
     }
 }

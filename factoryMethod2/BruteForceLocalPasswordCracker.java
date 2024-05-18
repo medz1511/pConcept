@@ -37,7 +37,7 @@ public class BruteForceLocalPasswordCracker extends LocalPasswordCracker {
 
     private String hashString(String input) {
         try {
-            MessageDigest md = MessageDigest.getInstance("MD5"); // Adjust the algorithm if needed
+            MessageDigest md = MessageDigest.getInstance("MD5"); 
             byte[] messageDigest = md.digest(input.getBytes());
             StringBuilder sb = new StringBuilder();
             for (byte b : messageDigest) {
